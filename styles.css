@@ -52,6 +52,10 @@ table {
 /**************** General Page Setup ***************/
 :root {
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Roboto", Helvetica, Arial, Verdana, sans-serif;
+
+    --link-color: #08c;
+    --main-text-color: #fff;
+    --small-text-color: #6e6e6e;
 }
 
 * {
