@@ -92,18 +92,23 @@ body {
     background: url("assets/hero.jpg") center 100% no-repeat;
     background-size: cover;
     display: grid;
+    gap: 60px;
     grid-area: main;
     grid-template-areas: 
         "navbar"
         "your-verse-link"
         "your-verse-film-link";
         padding: 0 15%;
-        place-items: center;
+    grid-template-rows: min-content min-content min-content;
+    justify-content: center;
+    padding-top: 80px;
+    place-items: center;
 }
 
 /**** Navbar ****/
-.navbar {
+#navbar {
     grid-area: navbar;
+    margin-bottom: 40px;
 } 
 
 .nav-list {
