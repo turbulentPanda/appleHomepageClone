@@ -77,22 +77,27 @@ body {
         ". main ."
         ". related-products ."
         ". footer .";
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 1fr 7fr 1fr;
     min-height: 100%;
     width: 100%;
 }
 
 /*************** MAIN ***************/
 #main {
+    border: 5px solid mistyrose;
+    background: url("assets/hero.jpg") center -225%; no-repeat;
+    background-size: cover;
     grid-area: main;
 }
 
 /******** ASIDE: RELATED PRODUCTS ********/
 #related-products {
+    border: 5px solid lightskyblue;
     grid-area: related-products;
 }
 
 /*************** FOOTER ***************/
 #footer {
+    border: 5px solid mistyrose;
     grid-area: footer;
 }
