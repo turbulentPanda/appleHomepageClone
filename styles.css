@@ -136,9 +136,15 @@ body {
 
 .nav-list li {
     border-right: 1px solid #5d5d5d;
+    cursor: pointer;
     display: grid;
     padding: 5px 20px;
     place-items: center;
+    transition-duration: 0.2s;
+}
+
+.nav-list li:hover {
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .nav-list li:last-child {
