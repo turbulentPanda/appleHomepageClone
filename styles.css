@@ -166,7 +166,14 @@ body {
 
 /**** Your Verse Titles ****/
 .your-verse-link {
+    display: grid;
+    gap: 20px;
     grid-area: your-verse-link;
+    justify-self: center;
+}
+
+.title-img {
+    justify-self: center;
 }
 
 .your-verse-film-link {
