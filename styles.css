@@ -176,10 +176,18 @@ body {
 /******** ASIDE: RELATED PRODUCTS ********/
 #related-products {
     display: grid;
-    gap: 1px;
+    gap: 2px;
     grid-area: related-products;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
+}
+
+.product-link {
+    width: 100%;
+}
+
+.product-link > img {
+    width: 100%;
 }
 
 /*************** FOOTER ***************/
