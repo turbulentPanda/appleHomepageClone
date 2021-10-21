@@ -65,6 +65,10 @@ table {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -73,31 +77,66 @@ body {
 #page-container {
     border: 1px solid red;
     display: grid;
+    gap: 3px;
     grid-template-areas:
         ". main ."
         ". related-products ."
         ". footer .";
     grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 1fr max-content max-content;
     min-height: 100%;
     width: 100%;
 }
 
 /*************** MAIN ***************/
 #main {
-    border: 5px solid mistyrose;
-    background: url("assets/hero.jpg") center -225%; no-repeat;
+    background: url("assets/hero.jpg") center 100% no-repeat;
     background-size: cover;
     grid-area: main;
 }
 
 /******** ASIDE: RELATED PRODUCTS ********/
 #related-products {
-    border: 5px solid lightskyblue;
+    display: grid;
+    gap: 3px;
     grid-area: related-products;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
 }
 
 /*************** FOOTER ***************/
 #footer {
-    border: 5px solid mistyrose;
+    color: var(--small-text-color);
+    display: grid;
+    font-size: 10px;
+    gap: 10px 50px;
     grid-area: footer;
+    grid-template-areas:
+        "store-info   links"
+        "copyright      .  ";
+    grid-template-rows: min-content min-content;
+    justify-content: center;
 }
+
+#footer a {
+    color: var(--link-color);
+}
+
+.store-information {
+    grid-area: store-info;
+}
+
+.copyright-policy-info {
+    grid-area: copyright;
+}
+
+.other-links {
+    display: grid;
+    grid-area: links;
+    grid-template-columns: repeat(8, max-content);
+}
+
+.other-links li {
+    border-right: 1px solid var(--small-text-color);
+}
+
