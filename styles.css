@@ -75,7 +75,6 @@ body {
 }
 
 #page-container {
-    border: 1px solid red;
     display: grid;
     gap: 3px;
     grid-template-areas:
@@ -116,6 +115,7 @@ body {
         "copyright      .  ";
     grid-template-rows: min-content min-content;
     justify-content: center;
+    margin: 20px 0 30px 0;
 }
 
 #footer a {
@@ -130,13 +130,31 @@ body {
     grid-area: copyright;
 }
 
+.pipe-color {
+    color: #ccc;
+}
+
 .other-links {
     display: grid;
+    gap: 5px;
     grid-area: links;
     grid-template-columns: repeat(8, max-content);
 }
 
-.other-links li {
-    border-right: 1px solid var(--small-text-color);
+.other-links a {
+    border-right: 1px solid #ccc;
+    display: grid;
+    padding: 1px 5px 1px 0;
 }
+
+.other-links li:last-child a {
+    border-right: none;
+}
+
+.flag-icon {
+    position: relative;
+    top: -2px;
+    width: 15px;
+}
+
 
