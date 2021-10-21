@@ -91,7 +91,25 @@ body {
 #main {
     background: url("assets/hero.jpg") center 100% no-repeat;
     background-size: cover;
+    display: grid;
     grid-area: main;
+    grid-template-areas: 
+        "navbar"
+        "your-verse-link"
+        "your-verse-film-link";
+    place-items: center;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.your-verse-link {
+    grid-area: your-verse-link;
+}
+
+.your-verse-film-link {
+    grid-area: your-verse-film-link;
 }
 
 /******** ASIDE: RELATED PRODUCTS ********/
