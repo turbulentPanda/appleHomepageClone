@@ -227,6 +227,11 @@ body {
     color: var(--link-color);
 }
 
+#footer a:hover {
+    text-decoration: underline;
+}
+
+
 .store-information {
     grid-area: store-info;
 }
@@ -261,5 +266,3 @@ body {
     top: -2px;
     width: 15px;
 }
-
-
