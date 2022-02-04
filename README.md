@@ -1,5 +1,9 @@
 # Archived Apple.com Clone
 
+## Live Preview:
+
+https://turbulentpanda.github.io/appleHomepageClone/
+
 ## Project Goal:
 
 Clone an Archived Version of the apple.com Homepage: https://web.archive.org/web/20140301004610/http://www.apple.com/ 
